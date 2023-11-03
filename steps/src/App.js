@@ -5,8 +5,16 @@ const messages = [
   "Apply for jobs 💼",
   "Invest your new income 🤑",
 ]
+export default function App() {
+  return (
+    <div className="App">
+      <Step />
+      <Step />
+    </div>
+  )
+}
 
-function App() {
+function Step() {
   const [step, setStep] = useState(1)
   const [isOpened, setIsOpened] = useState(true)
 
@@ -55,4 +63,3 @@ function App() {
     </>
   )
 }
-export default App
